@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	dh_auto_install
+	installdeb-hunspell
+	installdeb-myspell
+
+# disable 'test' target
+override_dh_auto_test:
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS.md

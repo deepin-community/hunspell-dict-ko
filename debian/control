@@ -1,0 +1,29 @@
+Source: hunspell-dict-ko
+Section: localization
+Priority: optional
+Maintainer: Debian Korean L10N <debian-l10n-korean@lists.debian.org>
+Uploaders: Changwoo Ryu <cwryu@debian.org>
+Homepage: https://spellcheck-ko.github.io/
+Vcs-Browser: https://salsa.debian.org/l10n-korean-team/hunspell-dict-ko
+Vcs-Git: https://salsa.debian.org/l10n-korean-team/hunspell-dict-ko.git
+Build-Depends: debhelper-compat (= 12),
+               dictionaries-common-dev (>= 1.10.5),
+               python3 (>= 3.5),
+               python3-yaml,
+Rules-Requires-Root: no
+Standards-Version: 4.4.1
+
+Package: hunspell-ko
+Architecture: all
+Depends: ${misc:Depends},
+	 dictionaries-common (>= 1.0)
+Provides: hunspell-dictionary, hunspell-dictionary-ko
+Breaks: libhunspell-1.2-0 (<< 1.2.14)
+Description: Korean dictionary for hunspell
+ This is the Korean dictionary for use with the hunspell spellchecker.
+ .
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and a
+ LibreOffice UNO module.

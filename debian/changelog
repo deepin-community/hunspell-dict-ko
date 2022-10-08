@@ -1,0 +1,252 @@
+hunspell-dict-ko (0.7.92-1) unstable; urgency=medium
+
+  * New upstream version
+    - Update debian/copyright
+    - Add python3-yaml to Build-Depends
+  * debian/watch: Correct the upstream filename
+  * debian/control:
+    - Bump debhelper compat to 12
+    - Bump Standards-Version to 4.4.1
+    - Change the Section to localization
+    - Move useless Build-Depends-Indep to Build-Depends
+  * debian/copyright:
+    - Use https for the copyright format URI
+  * debian/tests/control: Add autopkgtest settings
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 04 Dec 2019 20:21:15 +0900
+
+hunspell-dict-ko (0.7.90-1) unstable; urgency=medium
+
+  * New upstream version
+  * debian/control:
+    - Update Vcs-* to the salsa.debian.org repository
+    - Standards-Version: 4.3.0
+  * debian/salsa-ci.yml: Add Salsa CI
+  * debian/watch: Fix tarball download name
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri, 19 Jul 2019 00:53:28 -0300
+
+hunspell-dict-ko (0.7.1-1) unstable; urgency=medium
+
+  * New upstream version
+  * debian/control:
+    - Standards-Version: 4.1.2
+    - Change the Section back to text
+  * debian/source/options:
+    - Ignore __pycache__ to workaround dpkg-source failure
+  * debian/rules:
+    - Install the upstream NEWS file
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 25 Dec 2017 17:35:08 +0900
+
+hunspell-dict-ko (0.7.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * debian/control:
+    - Remove python3-lxml from build dependency
+    - Standards-Version: 4.1.1
+    - Change the section to localization
+  * debian/copyright:
+    - Add CC-BY-4.0 and CC-BY-SA-2.0 licenses
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 11 Nov 2017 13:01:15 +0900
+
+hunspell-dict-ko (0.6.4-1) unstable; urgency=medium
+
+  * New upstream version (Closes: #859294)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri, 08 Sep 2017 05:52:37 +0900
+
+hunspell-dict-ko (0.6.3-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 27 Aug 2017 11:39:21 +0900
+
+hunspell-dict-ko (0.6.2-1) unstable; urgency=medium
+
+  * New upstream version (Closes: #859294)
+  * debian/gbp.conf: Use master branch for gbp
+
+ -- Changwoo Ryu <cwryu@debian.org>  Thu, 23 Feb 2017 01:57:17 +0900
+
+hunspell-dict-ko (0.6.0-2) unstable; urgency=medium
+
+  * debian/copyright: Fix typos
+  * debian/control: Append python3-lxml in Build-Depends (Closes: #855675)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 22 Feb 2017 16:09:06 +0900
+
+hunspell-dict-ko (0.6.0-1) unstable; urgency=medium
+
+  [ Changwoo Ryu ]
+  * New upstream version
+  * debian/{control,watch,copyright}: Change the upstream URL
+  * debian/control: Standards-Version: 3.9.8
+  * debian/control: Correct VCS URLs
+  * debian/control: More description
+  * debian/copyright: Correct DEP-5 copyright format
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 20 Feb 2017 22:44:40 +0900
+
+hunspell-dict-ko (0.5.6-2) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * debian/watch: Find .tar.xz upstream tarball
+  * Standards-Version: 3.9.6
+  * Add git-buildpackage config
+  * Don't specify xz option anymore
+  * Correct Vcs-* fields
+  * Use Breaks instead of versioned Conflicts
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 09 Nov 2014 01:09:42 +0900
+
+hunspell-dict-ko (0.5.6-1) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * New Upstream Version
+  * Clean up debian/watch
+  * Use xz compression
+  * Use debhelper 9
+  * Remove Build-Depends on quilt
+  * Use the copyright format 1.0
+  * Standards-Version: 3.9.3
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 07 Oct 2012 11:26:06 +0900
+
+hunspell-dict-ko (0.5.5-1) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * New Upstream Version
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 12 Sep 2011 09:50:20 +0900
+
+hunspell-dict-ko (0.5.4-1) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * New Upstream Version
+  * debian/rules:
+    - Disable 'test' target (closes: #625144)
+  * debian/control:
+    - Build-Depends on dictionaries-common-dev (>= 1.10.5) (closes: #629071)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Tue, 19 Jul 2011 09:01:01 +0900
+
+hunspell-dict-ko (0.5.3-1) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * New Upstream Version
+  * debian/control:
+    - Standards-Version: 3.9.2
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 30 Apr 2011 19:22:17 +0900
+
+hunspell-dict-ko (0.5.2-1) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * New Upstream Version
+    - Needs hunspell >= 1.2.14
+  * Team maintained by Debian Korean L10N
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 03 Apr 2011 12:46:20 +0900
+
+hunspell-dict-ko (0.5.1-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Drop CDBS and use debhelper7
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 21 Mar 2011 03:17:38 +0900
+
+hunspell-dict-ko (0.5.0-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 25 Oct 2010 03:07:50 +0900
+
+hunspell-dict-ko (0.4.3-1) unstable; urgency=low
+
+  * New Upstream Version
+  * debian/control:
+    - Standards-Version: 3.9.1
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 01 Aug 2010 04:24:19 +0900
+
+hunspell-dict-ko (0.4.2-1) unstable; urgency=low
+
+  * New Upstream Version
+  * debian/watch: now works with the recent Google Code update
+  * debian/control:
+    - build-depends on dictionaries-common-dev >= 1.4.0
+    - Standards-Version: 3.9.0
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 04 Jul 2010 19:55:34 +0900
+
+hunspell-dict-ko (0.4.1-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Standards-Version: 3.8.4
+  * Don't create 'ko-KR' links for Mozilla anymore (Closes: #566804)
+  * Use source format 3.0 (quilt)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 06 Jun 2010 19:39:05 +0900
+
+hunspell-dict-ko (0.3.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-Version: 3.8.3
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 01 Nov 2009 04:32:42 +0900
+
+hunspell-dict-ko (0.3.3-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Move dicts files to /usr/share/hunspell and make compat links.
+  (Closes: #541907)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 30 Aug 2009 17:42:59 +0900
+
+hunspell-dict-ko (0.3.2-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 26 Jul 2009 06:54:09 +0900
+
+hunspell-dict-ko (0.3.1-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Add CREDITS document file.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 05 Jul 2009 03:53:32 +0900
+
+hunspell-dict-ko (0.3.0-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Standard-Version: 3.8.2
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 20 Jun 2009 01:24:04 +0900
+
+hunspell-dict-ko (0.2.4-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 24 May 2009 01:48:11 +0900
+
+hunspell-dict-ko (0.2.3-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 10 May 2009 01:14:29 +0900
+
+hunspell-dict-ko (0.2.2-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Provides hunspell-dictionary and hunspell-dictionary-ko.
+  * Do not install upstream README which is not useful to users.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Tue, 28 Apr 2009 03:45:13 +0900
+
+hunspell-dict-ko (0.2.0-1) unstable; urgency=low
+
+  * Initial Release (Closes: #518442).
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 15 Mar 2009 15:40:23 +0900

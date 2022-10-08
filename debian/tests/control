@@ -1,0 +1,2 @@
+Test-Command: make hosttest HOST_DICT_PATH=/usr/share/hunspell/ko
+Depends: hunspell-ko, hunspell (>= 1.7.0), make
